@@ -23,7 +23,7 @@ public class Week2 {
                 a. Print on two separate lines
                 b. Not use the "println()" method
          */
-        System.out.print("Hello \nWorld");
+        System.out.print("Hello \nWorld\n");
         /*
             Problem III
             --------
@@ -68,11 +68,11 @@ public class Week2 {
                 a. Only change the numbers, not the boolean assignment
          */
         int i = 0;
-        int x = 1;
+        int x = 3;
         int j = 2;
         boolean b = false;
         b = j % x == i;
-        System.out.print(b);
+        System.out.println(b);
 
 
 
@@ -90,13 +90,10 @@ public class Week2 {
                 b. Manipulate that number
          */
 
-
-
-
-
-
-
-
+        Scanner MyAge1 = new Scanner(System.in);
+        System.out.println("Enter Your age");
+        int Age = MyAge1.nextInt();
+        System.out.println(Age +5);
 
         /*
             Problem VII
@@ -107,12 +104,16 @@ public class Week2 {
                 b. Use a mix of decimals and integers
                 c. Your result should be a decimal
          */
-
-
-
-
-
-
+        Scanner Num = new Scanner(System.in);
+        System.out.println("Enter First Number");
+        int Num1 = Num.nextInt();
+        System.out.println("Enter Second Number");
+        int Num2 = Num.nextInt();
+        System.out.println("Enter Third Number");
+        int Num3 = Num.nextInt();
+        float sum = Num1+Num2+Num3;
+        float Res = sum/2;
+        System.out.println(Res);
 
         /*
             Problem VIII
@@ -122,11 +123,27 @@ public class Week2 {
                 a. Give the user 3 guesses
                 b. Present them with a success or fail message
          */
+        Scanner MyName2 = new Scanner(System.in);
+        System.out.println("Guess My Name");
+        String GuessName1 = MyName2.nextLine();
+        if (GuessName1.equals("Corinna"))
+            System.out.println("Success");
+        else
+            System.out.println("Fail");
 
+        System.out.println("Guess My Name");
+        String GuessName2 = MyName2.nextLine();
+        if (GuessName2.equals("Corinna"))
+            System.out.println("Success");
+        else
+            System.out.println("Fail");
 
-
-
-
+        System.out.println("Guess My Name");
+        String GuessName3 = MyName2.nextLine();
+        if (GuessName3.equals("Corinna"))
+            System.out.println("Success");
+        else
+            System.out.println("Fail");
 
         /*
             Problem IX
@@ -144,8 +161,6 @@ public class Week2 {
 
 
 
-
-
         /*
             Problem X
             --------
@@ -155,6 +170,9 @@ public class Week2 {
             Initial number: 12345678910
             New number: 234567891011
          */
+        Scanner Number = new Scanner(System.in);
+        System.out.println("Enter a 10 digit number");
+        int NUM = Number.nextInt();
 
 
 
