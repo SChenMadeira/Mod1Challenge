@@ -3,6 +3,12 @@ package madeira.cs;
 import java.util.Scanner;
 
 public class Week2 {
+    /*
+        Great work here Corinna. I liked your concise code and use of new variable types like floats
+
+        5/5 challenge
+        3/5 extra credit
+     */
     public static void main(String[] args) {
         /*
             Problem I
@@ -12,8 +18,8 @@ public class Week2 {
                 a. Print your full name on a single output line
                 b. Use 1 print statement for each part of your name (i.e. first, middle, last)
          */
-        System.out.print("Corinna ");
-        System.out.println("Chen");
+        System.out.print("Corinna");
+        System.out.println("Chen"); // Nice! Left some space after second line. Organized.
 
         /*
             Problem II
@@ -31,6 +37,9 @@ public class Week2 {
             You must:
                 a. Print the variable type of their age (i.e. int)
          */
+
+        // FIXME: This doesn't follow the instructions.
+        // FIXME: Your goal is to print out the TYPE of variable that that the user entered
         Scanner MyAge = new Scanner(System.in);
         System.out.println("Enter Your Year of Birth");
         int Year = MyAge.nextInt();
@@ -48,6 +57,8 @@ public class Week2 {
         Scanner MyName = new Scanner(System.in);
         System.out.println("Enter Your First Name");
         String FirstName = MyName.nextLine();
+        // FIXME: you can combine lines 55 & 56 like this:
+        boolean example = FirstName.equals("Mr. Wallace");
         boolean a = true;
         a = FirstName.equals("Corinna");
         System.out.println(a);
@@ -89,11 +100,11 @@ public class Week2 {
                 a. Read your current age
                 b. Manipulate that number
          */
-
+        // +1
         Scanner MyAge1 = new Scanner(System.in);
         System.out.println("Enter Your age");
         int Age = MyAge1.nextInt();
-        System.out.println(Age +5);
+        System.out.println(Age +5); // Nice work printing these in one line
 
         /*
             Problem VII
@@ -104,6 +115,7 @@ public class Week2 {
                 b. Use a mix of decimals and integers
                 c. Your result should be a decimal
          */
+        // +1
         Scanner Num = new Scanner(System.in);
         System.out.println("Enter First Number");
         int Num1 = Num.nextInt();
@@ -111,7 +123,7 @@ public class Week2 {
         int Num2 = Num.nextInt();
         System.out.println("Enter Third Number");
         int Num3 = Num.nextInt();
-        float sum = Num1+Num2+Num3;
+        float sum = Num1+Num2+Num3; // cool that you used a float! good exploration
         float Res = sum/2;
         System.out.println(Res);
 
@@ -123,6 +135,7 @@ public class Week2 {
                 a. Give the user 3 guesses
                 b. Present them with a success or fail message
          */
+        // +1
         Scanner MyName2 = new Scanner(System.in);
         System.out.println("Guess My Name");
         String GuessName1 = MyName2.nextLine();
