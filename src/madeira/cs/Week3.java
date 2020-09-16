@@ -59,23 +59,17 @@ public class Week3 {
             System.out.println("Guess the number:");
             guess = Game.nextInt();
             if (number == guess) {
-                System.out.println(
-                        "Congratulations!"
-                                + " You guessed the number.");
+                System.out.println("Congratulations! You guessed the number.");
                 break;
             }
-            else if (number != guess
-                    && i != 9) {
+            else if (number != guess && i != 9) {
                 System.out.println("Try it again");
             }
         }
-        if (i == 10) {
-            System.out.println("You lose");
+        if (i == 10) { System.out.println("You lose");
 
-            System.out.println(
-                    "The number was " + number);
+            System.out.println("The number was " + number);
         }
-
 
         /*
 
@@ -136,5 +130,42 @@ public class Week3 {
             Brownie points for well commented / organized code that goes above and beyond to direct the user clearly & leaves no room for ambiguous edge cases
 
         */
+
+        Scanner NewGame = new Scanner(System.in);
+        int Number = 36;
+        int j, Guess;
+        for (j=0;  ; ) {
+            System.out.println("Guess the number:");
+            Guess = NewGame.nextInt();
+            if (Number == Guess) {
+                System.out.println("Congratulations!" + " You guessed the number.");
+                break;
+            }
+            else if (Guess <= Number +2 && Guess >= Number -2  && i != 9) {
+                System.out.println("Hot");
+                j+=4;
+                if (j == 6) {
+                    System.out.println("One more guess!");
+                }
+            }
+            else if (Guess <= Number +4 && Guess >= Number -4  && i != 9) {
+                System.out.println("Medium");
+                j+=2;
+                if (j == 8) {
+                    System.out.println("One more guess!");
+                }
+            }
+            else if (Guess <= Number +8 && Guess >= Number -8  && i != 9) {
+                System.out.println("Mild");
+                j+=1;
+            }
+            else {
+                System.out.println("Guess again!");
+            }
+            if (Guess != Number && j>=10) {
+                System.out.println("Play this game again");
+                j=0;
+            }
+        }
     }
 }
